@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Metadados da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclui o Vue.js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="shortcut icon" href="calculadora.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Área da Calculadora -->
+    <div id="app">
+        <div class="calculadora">
+            <!-- Display da Calculadora -->
+            <div class="display">{{ display }}</div>
+            <!-- Botões da Calculadora -->
+            <div class="botoes">
+                <!-- Botões de Limpeza e Controle -->
+                <button class="operador" @click="definirOperacao('%')">%</button>
+                <button class="operador" @click="limpar">CE</button>
+                <button class="operador" @click="limpar">C</button>
+                <button class="operador" @click="apagar"><img src="backspace.png" width="25px" alt="apaga"></button>
+                <!-- Botões de Números -->
+                <button @click="adicionarNumero(7)">7</button>
+                <button @click="adicionarNumero(8)">8</button>
+                <button @click="adicionarNumero(9)">9</button>
+                <!-- Botões de Operações -->
+                <button class="operador" @click="definirOperacao('/')">/</button>
+                <button @click="adicionarNumero(4)">4</button>
+                <button @click="adicionarNumero(5)">5</button>
+                <button @click="adicionarNumero(6)">6</button>
+                <button class="operador" @click="definirOperacao('-')">-</button>
+                <button @click="adicionarNumero(1)">1</button>
+                <button @click="adicionarNumero(2)">2</button>
+                <button @click="adicionarNumero(3)">3</button>
+                <button class="operador" @click="definirOperacao('*')">x</button>
+                <!-- Botões de Decimal, Zero e Igual -->
+                <button @click="definirDecimal()">.</button>
+                <button @click="adicionarNumero(0)">0</button>
+                <button class="igual" @click="calcular()">=</button>
+                <button class="operador" @click="definirOperacao('+')">+</button>
+            </div>
+        </div>
+    </div>
+    <!-- Script JavaScript -->
+    <script src="index.js"></script>
+</body>
+
+</html>

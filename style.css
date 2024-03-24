@@ -1,0 +1,62 @@
+.calculadora {
+    width: 250px;
+    margin: 50px auto;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(165, 165, 165);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.display {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    
+}
+.operador{
+    background-color: rgba(104, 103, 103, 0.808);
+}
+.igual{
+    background-color: rgba(144, 144, 247, 0.603);
+}
+.igual:hover{
+    background-color:rgba(172, 172, 238, 0.603);
+}
+
+button {
+    color: black;
+    background-color: #8b8b8b;
+    border: 1px solid #ccccccd3;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b6b5b5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
